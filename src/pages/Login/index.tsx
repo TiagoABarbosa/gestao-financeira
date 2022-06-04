@@ -15,7 +15,7 @@ const LoginPage: React.FunctionComponent<ILoginPageProps> = (props) => {
 
         signInWithPopup(auth, new GoogleAuthProvider())
             .then((response) => {
-                console.log(response.user.uid);
+                console.log(response.user.email);
                 navigate('/');
             })
             .catch((error) => {
@@ -42,3 +42,7 @@ export default LoginPage;
                 Sign in with Google
             </button>
         </div> */}
+
+function user(user: any): any {
+    throw new Error('Function not implemented.');
+}

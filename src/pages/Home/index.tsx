@@ -17,7 +17,7 @@ const Home = () => {
   const [expense, setExpense] = useState(0);
 //LOGOUT GOOGLE
   const auth = getAuth();
-  
+    
   useEffect(() => {
     setFilteredList(filterListByMonth(list, currentMonth));
   }, [list, currentMonth]);
