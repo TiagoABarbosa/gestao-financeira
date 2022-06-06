@@ -2,6 +2,8 @@ import * as C from './styles';
 import { Item } from '../../types/Item';
 import { formatDate } from '../../helpers/dateFilter';
 import { categories } from '../../data/categories';
+import { AiOutlineEdit, AiOutlineDelete } from "react-icons/ai";
+import axios from "axios";
 
 type Props = {
     item: Item
@@ -21,7 +23,13 @@ export const TableItem = ({ item }: Props) => {
                 <C.Value color={categories[item.category].expense ? 'red' : 'blue'}>
                     R$ {item.value}
                 </C.Value>
+                <C.Button>
+                    <AiOutlineDelete size={18}></AiOutlineDelete>
+                </C.Button>
+                <C.Button>
+                    <AiOutlineEdit size={18}></AiOutlineEdit>
+                </C.Button>
             </C.TableColumn>
         </C.TableLine>
     );
-}
+};

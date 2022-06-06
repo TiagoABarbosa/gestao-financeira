@@ -4,6 +4,7 @@ export const Container = styled.div``;
 
 export const Header = styled.div`
     background-image: url("background-finance.png");
+    background-position: right;
     opacity: 100%;
     height: 150px;
     text-align: center;

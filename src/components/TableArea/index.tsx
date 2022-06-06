@@ -15,9 +15,9 @@ export const TableArea = ({ list }: Props) => {
                 <tr>
                     <C.TableHeadColumn width={100}>Data</C.TableHeadColumn>
                     <C.TableHeadColumn width={150}>Categoria</C.TableHeadColumn>
-                    <C.TableHeadColumn>Título</C.TableHeadColumn>
+                    <C.TableHeadColumn >Título</C.TableHeadColumn>
                     <C.TableHeadColumn width={150}>Valor</C.TableHeadColumn>
-
+                    
                 </tr>
             </thead>
             <tbody>

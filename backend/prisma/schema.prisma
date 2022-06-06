@@ -10,9 +10,9 @@ datasource db {
   url      = "postgresql://admin:admin@localhost:5432"
 }
 
-model TableArea{
+model Items{
   id Int @id @default(autoincrement())
-  date DateTime
+  date String
   category String
   title String
   value Float

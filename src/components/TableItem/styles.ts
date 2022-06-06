@@ -17,6 +17,23 @@ export const Category = styled.div<{ color: string }>`
 `;
 
 export const Value = styled.div<{ color: string }>`
+    display: inline-block;
+    padding-right: 20px;
     color: ${props => props.color};
+    
+`;
 
+export const Button = styled.button`
+    display: inline;
+    float: right;
+    cursor: pointer;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    color: #292929;
+
+    &:hover {
+        background-color: #0077d2;
+        color: white;
+    }           
+    
 `;
