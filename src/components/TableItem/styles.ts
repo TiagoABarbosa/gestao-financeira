@@ -19,12 +19,15 @@ export const Category = styled.div<{ color: string }>`
 export const Value = styled.div<{ color: string }>`
     display: inline-block;
     padding-right: 20px;
+    vertical-align: middle;
     color: ${props => props.color};
     
 `;
 
 export const Button = styled.button`
     display: inline;
+    .margin: 0 0 10px 0;
+    padding-top: 5px;
     float: right;
     cursor: pointer;
     border: 1px solid lightblue;
