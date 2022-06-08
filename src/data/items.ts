@@ -13,9 +13,3 @@ export const items: Item[] = [
 items.sort(function(a,b) { 
     return a.date.getTime() - b.date.getTime() 
 });
-
-console.log(items);
-   
-
-
-

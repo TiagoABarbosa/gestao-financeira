@@ -36,13 +36,6 @@ const LoginPage: React.FunctionComponent<ILoginPageProps> = (props) => {
 
 export default LoginPage;
 
-{/* <div>
-            <p>Pagina de Login - Google</p>
-            <button onClick={() => signInWithGoogle()} disabled={authing}>
-                Sign in with Google
-            </button>
-        </div> */}
-
-function user(user: any): any {
+function user(user: any) {
     throw new Error('Function not implemented.');
 }

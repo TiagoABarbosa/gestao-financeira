@@ -5,6 +5,7 @@ import LoginPage from './pages/Login';
 import { initializeApp } from 'firebase/app';
 import { config } from './config/config';
 import AuthRoute from './routes/AuthRoute';
+import Footer from './components/Footer';
 
 initializeApp(config.firebaseConfig);
 
@@ -24,7 +25,9 @@ const App: React.FunctionComponent<IApplicationProps> = (props) => {
                 />
                 <Route path="/login" element={<LoginPage />} />
             </Routes>
+            <Footer></Footer>
         </BrowserRouter>
+        
     );
 };
 

@@ -18,10 +18,9 @@ export const Category = styled.div<{ color: string }>`
 
 export const Value = styled.div<{ color: string }>`
     display: inline-block;
-    padding-right: 20px;
+    padding-right: 5px;
     vertical-align: middle;
     color: ${props => props.color};
-    
 `;
 
 export const Button = styled.button`
@@ -38,5 +37,4 @@ export const Button = styled.button`
         background-color: #0077d2;
         color: white;
     }           
-    
 `;

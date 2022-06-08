@@ -3,7 +3,6 @@ import { Item } from '../../types/Item';
 import { formatDate } from '../../helpers/dateFilter';
 import { categories } from '../../data/categories';
 import { AiOutlineEdit, AiOutlineDelete } from "react-icons/ai";
-import axios from "axios";
 
 type Props = {
     item: Item

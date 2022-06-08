@@ -1,7 +1,5 @@
 import * as C from './styles';
 import { Item } from '../../types/Item';
-import { listenerCount } from 'process';
-import { items } from '../../data/items';
 import { TableItem } from '../TableItem';
 
 type Props = {
