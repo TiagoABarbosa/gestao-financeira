@@ -1,6 +1,6 @@
 import { Item } from '../types/Item';
 
-export const items: Item[] = [
+export const ArrayItems: Item[] = [
     { date: new Date(2022, 5, 1), category: 'salary', title: 'Salário Mês', value: 6000.00 },
     { date: new Date(2022, 5, 28), category: 'food', title: 'McDonalds', value: 69.12 },
     { date: new Date(2022, 5, 30), category: 'fuel', title: 'Gasolina', value: 120.00 },
@@ -10,6 +10,6 @@ export const items: Item[] = [
 
 ];
 
-items.sort(function(a,b) { 
+ArrayItems.sort(function(a,b) { 
     return a.date.getTime() - b.date.getTime() 
 });

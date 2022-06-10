@@ -3,12 +3,26 @@ import { Item } from '../../types/Item';
 import { formatDate } from '../../helpers/dateFilter';
 import { categories } from '../../data/categories';
 import { AiOutlineEdit, AiOutlineDelete } from "react-icons/ai";
+import axios from 'axios';
+import { BASE_URL } from '../../config/requests';
+import { useEffect, useState } from 'react';
 
 type Props = {
     item: Item
 }
 
 export const TableItem = ({ item }: Props) => {
+
+    const [itemValue, setItemValue] = useState(0);
+
+    useEffect(() => {
+        axios.get(`${BASE_URL}/items`)
+            .then(response => {
+                const data = response.data as Item;
+            });
+
+    }, [itemValue]);
+
     return (
         <C.TableLine>
             <C.TableColumn>{formatDate(item.date)}</C.TableColumn>
@@ -30,5 +44,6 @@ export const TableItem = ({ item }: Props) => {
                 </C.Button>
             </C.TableColumn>
         </C.TableLine>
+
     );
 };

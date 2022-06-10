@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import * as C from './styles';
 import { Item } from '../../types/Item';
 import { categories } from '../../data/categories';
-import { items } from '../../data/items';
+import { ArrayItems } from '../../data/items';
 import { getCurrentMonth, filterListByMonth } from '../../helpers/dateFilter';
 import { TableArea } from '../../components/TableArea';
 import { InfoArea } from '../../components/InfoArea';
@@ -10,7 +10,7 @@ import { InputArea } from '../../components/InputArea';
 import { getAuth, signOut } from 'firebase/auth';
 
 const Home = () => {
-  const [list, setList] = useState(items);
+  const [list, setList] = useState(ArrayItems);
   const [filteredList, setFilteredList] = useState<Item[]>([]);
   const [currentMonth, setCurrentMonth] = useState(getCurrentMonth());
   const [income, setIncome] = useState(0);

@@ -10,10 +10,10 @@ datasource db {
   url      = "postgresql://admin:admin@localhost:5432"
 }
 
-model Items{
+model tb_items{
   id Int @id @default(autoincrement())
-  date String
-  category String
-  title String
+  date DateTime @default(now())
+  category String @db.Char(50)
+  title String @db.VarChar(200)
   value Float
 }
