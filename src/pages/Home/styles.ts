@@ -17,8 +17,22 @@ export const HeaderText = styled.h1`
     padding-top: 30px;
     text-shadow: black 0.2em 0.1em 0.1em;
 `;
+export const Button = styled.button`
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    color: #3E3E3E;
+    padding-top: 5px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;  
 
-export const Button = styled.button``;
+    &:hover {
+        background-color: #0077d2;
+        color: white;
+    }           
+    
+`;
 
 export const Body = styled.div`
     margin: auto;

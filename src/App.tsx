@@ -25,7 +25,7 @@ const App: React.FunctionComponent<IApplicationProps> = (props) => {
                 />
                 <Route path="/login" element={<LoginPage />} />
             </Routes>
-            <Footer></Footer>
+            <Footer/>
         </BrowserRouter>
         
     );

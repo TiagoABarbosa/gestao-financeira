@@ -8,6 +8,7 @@ import { TableArea } from '../../components/TableArea';
 import { InfoArea } from '../../components/InfoArea';
 import { InputArea } from '../../components/InputArea';
 import { getAuth, signOut } from 'firebase/auth';
+import { AiOutlineLogout } from "react-icons/ai";
 
 const Home = () => {
   const [list, setList] = useState(ArrayItems);
@@ -15,9 +16,9 @@ const Home = () => {
   const [currentMonth, setCurrentMonth] = useState(getCurrentMonth());
   const [income, setIncome] = useState(0);
   const [expense, setExpense] = useState(0);
-//LOGOUT GOOGLE
+  //LOGOUT GOOGLE
   const auth = getAuth();
-    
+
   useEffect(() => {
     setFilteredList(filterListByMonth(list, currentMonth));
   }, [list, currentMonth]);
@@ -50,11 +51,16 @@ const Home = () => {
   return (
     <C.Container>
       <C.Header>
-        <C.HeaderText>Gestão Financeira</C.HeaderText>
-        <C.Button onClick={() => signOut(auth)}>Deslogar</C.Button>
-      </C.Header>
-      <C.Body>
+        
+        <C.Button>
+          <AiOutlineLogout size={22} title="Logout" onClick={() => signOut(auth)}>
+          </AiOutlineLogout>
+        </C.Button>
 
+        <C.HeaderText>Gestão Financeira</C.HeaderText>
+      </C.Header>
+
+      <C.Body>
         <InfoArea
           currentMonth={currentMonth}
           onMonthChange={handleMonthChange}
