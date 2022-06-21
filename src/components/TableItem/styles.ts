@@ -32,6 +32,7 @@ export const Button = styled.button`
     border: 1px solid lightblue;
     border-radius: 5px;
     color: #292929;
+    transition: 0.3s ease-out;
 
     &:hover {
         background-color: #0077d2;

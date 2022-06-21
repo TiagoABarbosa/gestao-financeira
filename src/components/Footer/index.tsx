@@ -12,7 +12,7 @@ const Footer = () => {
           </a>
         </p>
       </div>
-    </footer>
+     </footer>
     </C.Footer>
   );
 };

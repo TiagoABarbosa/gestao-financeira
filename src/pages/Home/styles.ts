@@ -24,8 +24,9 @@ export const Button = styled.button`
     padding-top: 5px;
     cursor: pointer;
     float: right;
-    margin-top: 10px;
-    margin-right: 10px;  
+    margin-top: 20px;
+    margin-right: 20px;
+    transition: 0.5s ease-out;  
 
     &:hover {
         background-color: #0077d2;

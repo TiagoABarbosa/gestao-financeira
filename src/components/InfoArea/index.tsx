@@ -28,7 +28,7 @@ export const InfoArea = ({ currentMonth, onMonthChange, income, expense }: Props
     return (
         <C.Container>
             <C.MonthArea>
-                <C.MonthArrow onClick={handlePrevMonth}>⬅️</C.MonthArrow>
+                <C.MonthArrow  onClick={handlePrevMonth}>⬅️</C.MonthArrow>       
                 <C.MonthTitle>{formatCurrentMonth(currentMonth)}</C.MonthTitle>
                 <C.MonthArrow onClick={handleNextMonth}>➡️</C.MonthArrow>
 
@@ -42,7 +42,6 @@ export const InfoArea = ({ currentMonth, onMonthChange, income, expense }: Props
                     color={(income - expense) < 0 ? 'red' : 'blue'}
                 />
             </C.ResumeArea>
-
         </C.Container>
     );
 }
